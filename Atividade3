@@ -1,0 +1,64 @@
+#include <stdio.h>
+
+int main()
+{
+   
+    int dia;
+    int mes;
+    int ano;
+    int conta;
+   
+    printf ("Infome sua data de nascimento formato (dd/mm/aaaa): ");
+    scanf("%d/%d/%d",&dia,&mes,&ano);
+    conta = (dia*100+mes)+ano;
+    conta= conta/100+conta%100;
+    conta=conta%5;
+     
+    if (conta==0){
+        printf("\n\n-------------------------\n");
+
+printf("     TIMIDO\n");
+
+ printf("-------------------------\n");
+ printf("\n\n\n");
+       
+    }
+     if (conta==1){
+        printf("\n\n-------------------------\n");
+
+printf("     SONHADOR\n");
+
+ printf("-------------------------\n");
+       
+    }
+     if (conta==2){
+        printf("\n\n-------------------------\n");
+
+printf("     PAQUERADOR\n");
+
+ printf("-------------------------\n");
+       
+    }
+     if (conta==3){
+        printf("\n\n-------------------------\n");
+
+printf("     ATRAENTE\n");
+
+ printf("-------------------------\n");
+       
+    }
+     if (conta==4){
+        printf("\n\n-------------------------\n");
+
+printf("     IRRESISTIVEL\n");
+
+ printf("-------------------------\n");
+       
+    }
+   
+   
+   
+   
+    return 0;
+   
+}
