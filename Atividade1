@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    int soma;
+    printf("Digite o numero a qual deseja imprimir a tabuada: ");
+    scanf ("%d", &num);
+   
+ printf("\n\n--------------\n");
+
+printf(" TABUADA DO %d\n",num);
+
+ printf("--------------\n");
+    for (int i=1;i<=10;i++){
+        soma = num * i;
+        printf ("%d x %d = %d \n",num,i,soma);
+         
+    }
+   
+   
+    return 0;
+}
