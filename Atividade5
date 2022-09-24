@@ -1,0 +1,36 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+ 
+int main(void){
+    char nome[100];
+    char telefone[100];
+    char email[100];
+    int tamN;
+    int tamT;
+    int tamE;
+    system("clear||cls");
+    printf ("Digite seu nome: ");
+    scanf ("%s",&nome);
+    tamN = strlen(nome);
+   
+     printf ("Digite seu telefone: ");
+    scanf ("%s",&telefone);
+    tamT = strlen(telefone);
+   
+     printf ("Digite seu email: ");
+    scanf ("%s",&email);
+    tamE = strlen(email);
+
+   system("clear||cls");
+   printf("\n\n-------------------------------------\n");
+
+printf(" CONTAGEM DE CARACTERES\n");
+
+ printf("-------------------------------------\n");
+    printf ("\nSeu nome possui %d caracteres\n",tamN);
+    printf ("\nSeu telefone possui %d caracteres\n",tamT);
+    printf ("\nSeu  email possui %d caracteres\n",tamE);
+
+    return 0;
+}
