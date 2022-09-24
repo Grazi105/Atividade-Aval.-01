@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    int escolha;
+    int num1=1;
+    int num2=1;
+    int cont=0;
+   
+    printf ("Infome o número inteiro maior que 3: ");
+    scanf("%d",&escolha);
+    if (escolha <3){
+        printf("Por favor digitar um número inteiro maior que 3");
+        return 0;
+    }else{
+       
+   
+    printf("\n\n------------------------------------------\n");
+
+printf(" SÉRIE DE FIBONACCI COM %d POSÇÕES\n",escolha);
+
+ printf("------------------------------------------\n");
+     printf ("1,1");
+    for (int i = 0; i<=escolha-3; i++){
+        cont = num1 + num2;
+        num1=cont;
+        num2=cont-num2;
+        printf(",%d",cont);
+    }
+   
+    return 0;
+    }
+}
